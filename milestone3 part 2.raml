@@ -1,0 +1,31 @@
+#%RAML 1.0
+types:
+  NewDataType:
+    type: object
+title: Milestone2 part 2-Shaurya
+baseUri: http://milestone3-njek.us-e2.cloudhub.io
+mediaType:
+  - application/json
+protocols:
+  - HTTP
+/m2:
+  post:
+    body:
+      application/json:
+        type: object
+    responses:
+      "200":
+        body:
+          application/json:
+            items:
+              properties:
+                post_id:
+                  example: Example
+                  type: string
+                id:
+                  example: Example
+                  type: string
+                name:
+                  example: Example
+                  type: string
+    securedBy: []

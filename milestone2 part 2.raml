@@ -1,0 +1,36 @@
+#%RAML 1.0
+title: MajorAssignment-Shaurya Singh
+baseUri: https://milestone-shauryasingh-sfax.us-e2.cloudhub.io
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP
+types:
+  milestone2datatype:
+    items:
+      example:
+        strict: true
+        value:
+          id: "3817"
+          name: The Hon. Bankim Bandopadhyay
+          email: the_bandopadhyay_bankim_hon@boyle-robel.name
+          gender: female
+          status: inactive
+      properties:
+        id:
+          example: "3817"
+          type: string
+        name:
+          example: The Hon. Bankim Bandopadhyay
+          type: string
+        email:
+          example: the_bandopadhyay_bankim_hon@boyle-robel.name
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
+/milestone1: {}
